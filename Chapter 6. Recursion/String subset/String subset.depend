@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1588852305 source:d:\c programming language\gfg\chapter 6. recursion\string subset\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+
