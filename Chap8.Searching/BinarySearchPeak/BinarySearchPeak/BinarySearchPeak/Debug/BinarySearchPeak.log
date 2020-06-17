@@ -1,0 +1,3 @@
+﻿  BinarySearchPeak.cpp
+D:\CProgrammingLanguage\gfg\Chap8.Searching\BinarySearchPeak\BinarySearchPeak\BinarySearchPeak\BinarySearchPeak.cpp(34): warning C4715: 'peakElement': not all control paths return a value
+  BinarySearchPeak.vcxproj -> D:\CProgrammingLanguage\gfg\Chap8.Searching\BinarySearchPeak\BinarySearchPeak\Debug\BinarySearchPeak.exe
