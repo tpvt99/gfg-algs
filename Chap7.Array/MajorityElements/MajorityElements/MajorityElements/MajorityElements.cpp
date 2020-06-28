@@ -10,10 +10,12 @@ int main()
     int a[] = { 8, 3, 4, 8,8 };
     int b[] = { 3, 7,4,7,7,5 };
     int c[] = { 1,1,2,2,2,2,2,1,1 };
+    int d[] = { 4, 4, 2,2,2,4,4 };
 
     printf("Index of majority of a: %d\n", majorityElements(a, sizeof(a) / sizeof(a[0])));
     printf("Index of majority of b: %d\n", majorityElements(b, sizeof(b) / sizeof(b[0])));
     printf("Index of majority of c: %d\n", majorityElements(c, sizeof(c) / sizeof(c[0])));
+    printf("Index of majority of d: %d\n", majorityElements(d, sizeof(d) / sizeof(d[0])));
 }
 
 int majorityElements(int* a, int n) {
