@@ -1,2 +1,7 @@
 ﻿  ConsoleApplication1.cpp
+D:\CProgrammingLanguage\gfg\Chap8.Searching\MedianOf2SortedArrays\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(42,13): warning C4101: 'i2': unreferenced local variable
+D:\CProgrammingLanguage\gfg\Chap8.Searching\MedianOf2SortedArrays\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(42,9): warning C4101: 'i1': unreferenced local variable
+D:\CProgrammingLanguage\gfg\Chap8.Searching\MedianOf2SortedArrays\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(43,11): warning C4101: 'median': unreferenced local variable
+D:\CProgrammingLanguage\gfg\Chap8.Searching\MedianOf2SortedArrays\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(198,13): warning C4101: 'i2': unreferenced local variable
+D:\CProgrammingLanguage\gfg\Chap8.Searching\MedianOf2SortedArrays\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(198,9): warning C4101: 'i1': unreferenced local variable
   ConsoleApplication1.vcxproj -> D:\CProgrammingLanguage\gfg\Chap8.Searching\MedianOf2SortedArrays\ConsoleApplication1\Debug\ConsoleApplication1.exe
