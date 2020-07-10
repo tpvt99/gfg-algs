@@ -23,7 +23,7 @@ void rearrangeAlternately(int* a, int n) {
     int srcMinIndex = 0;
     int destMaxIndex = 0;
     int destMinIndex = 1;
-    int maxNumber = a[n - 1];
+    int maxNumber = a[n - 1]+1;
 
     while (srcMinIndex <= srcMaxIndex) {
         int srcMax = a[srcMaxIndex];
@@ -49,10 +49,7 @@ void rearrangeAlternately(int* a, int n) {
     }
 
     for (int i = 0; i < n;i++) {
-        if (a[i] % maxNumber != 0)
-            a[i] = a[i] / maxNumber;
-        else
-            a[i] = a[i] / maxNumber - 1;
+        a[i] = a[i] / maxNumber;
 
     }
     
