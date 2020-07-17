@@ -17,6 +17,7 @@ int main()
     int d[] = { -3, 4, 6, -2 };
     int e[] = { -8,7,6 };
     int f[] = { 3,-4,5,6,-8,7 };
+    int g[] = { -18 };
 
     printf("Max sum: %d\n", naiveMethod(a, sizeof(a) / sizeof(a[0])));
     printf("Max sum: %d\n", naiveMethod(b, sizeof(b) / sizeof(b[0])));
@@ -24,6 +25,7 @@ int main()
     printf("Max sum: %d\n", naiveMethod(d, sizeof(d) / sizeof(d[0])));
     printf("Max sum: %d\n", naiveMethod(e, sizeof(e) / sizeof(e[0])));
     printf("Max sum: %d\n", naiveMethod(f, sizeof(f) / sizeof(f[0])));
+    printf("Max sum: %d\n", naiveMethod(g, sizeof(g) / sizeof(g[0])));
 
     printf("Max sum: %d\n", improveMethod(a, sizeof(a) / sizeof(a[0])));
     printf("Max sum: %d\n", improveMethod(b, sizeof(b) / sizeof(b[0])));
@@ -31,6 +33,7 @@ int main()
     printf("Max sum: %d\n", improveMethod(d, sizeof(d) / sizeof(d[0])));
     printf("Max sum: %d\n", improveMethod(e, sizeof(e) / sizeof(e[0])));
     printf("Max sum: %d\n", improveMethod(f, sizeof(f) / sizeof(f[0])));
+    printf("Max sum: %d\n", improveMethod(g, sizeof(g) / sizeof(g[0])));
 }
 
 int naiveMethod(int* a, int n) {
@@ -47,6 +50,8 @@ int naiveMethod(int* a, int n) {
 
 int improveMethod(int* a, int n) {
     int maxSubArray = helperMaximumSubArray(a, n);
+    if (maxSubArray < 0)
+        return maxSubArray;
     int temp = 0;
     for (int i = 0; i < n; i++) {
         temp += a[i];
