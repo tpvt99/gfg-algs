@@ -1,0 +1,2 @@
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\LumotoPartition\LumotoPartition\Debug\LumotoPartition.exe
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\LumotoPartition\LumotoPartition\Debug\LumotoPartition.pdb

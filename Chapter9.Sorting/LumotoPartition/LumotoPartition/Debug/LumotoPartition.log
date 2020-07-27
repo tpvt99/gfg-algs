@@ -1,0 +1,5 @@
+﻿  LumotoPartition.cpp
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\LumotoPartition\LumotoPartition\LumotoPartition.cpp(31,23): warning C4456: declaration of 'i' hides previous local declaration
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\LumotoPartition\LumotoPartition\LumotoPartition.cpp(16,9): message : see declaration of 'i'
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\LumotoPartition\LumotoPartition\LumotoPartition.cpp(14,33): warning C4100: 'low': unreferenced formal parameter
+  LumotoPartition.vcxproj -> D:\CProgrammingLanguage\gfg\Chapter9.Sorting\LumotoPartition\LumotoPartition\Debug\LumotoPartition.exe
