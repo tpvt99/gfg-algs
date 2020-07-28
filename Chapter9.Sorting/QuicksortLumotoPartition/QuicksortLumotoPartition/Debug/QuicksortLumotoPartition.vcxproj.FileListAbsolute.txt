@@ -1,0 +1,2 @@
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\QuicksortLumotoPartition\QuicksortLumotoPartition\Debug\QuicksortLumotoPartition.exe
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\QuicksortLumotoPartition\QuicksortLumotoPartition\Debug\QuicksortLumotoPartition.pdb
