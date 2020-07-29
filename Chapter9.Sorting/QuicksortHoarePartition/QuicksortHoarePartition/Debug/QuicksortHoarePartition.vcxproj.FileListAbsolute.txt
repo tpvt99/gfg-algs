@@ -1,0 +1,2 @@
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\QuicksortHoarePartition\QuicksortHoarePartition\Debug\QuicksortHoarePartition.exe
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\QuicksortHoarePartition\QuicksortHoarePartition\Debug\QuicksortHoarePartition.pdb

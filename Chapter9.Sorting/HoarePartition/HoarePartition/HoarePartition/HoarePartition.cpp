@@ -17,7 +17,7 @@ int hoardPartition(int* a, int low, int high) {
     int i = low, j = high;
     while (true) {
         for (;;) {
-            if (a[i] >= pivot)
+            if (a[i] > pivot)
                 break;
             i++;
         }
