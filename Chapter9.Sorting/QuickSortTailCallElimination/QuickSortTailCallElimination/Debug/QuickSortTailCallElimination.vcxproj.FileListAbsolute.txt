@@ -1,0 +1,2 @@
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\QuickSortTailCallElimination\QuickSortTailCallElimination\Debug\QuickSortTailCallElimination.exe
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\QuickSortTailCallElimination\QuickSortTailCallElimination\Debug\QuickSortTailCallElimination.pdb
