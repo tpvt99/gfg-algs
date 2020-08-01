@@ -1,0 +1,2 @@
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\kthSmallest\KthSmallest\Debug\KthSmallest.exe
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\kthSmallest\KthSmallest\Debug\KthSmallest.pdb
