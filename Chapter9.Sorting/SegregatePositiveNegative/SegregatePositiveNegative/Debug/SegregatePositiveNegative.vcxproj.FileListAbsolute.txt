@@ -1,0 +1,2 @@
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\SegregatePositiveNegative\SegregatePositiveNegative\Debug\SegregatePositiveNegative.exe
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\SegregatePositiveNegative\SegregatePositiveNegative\Debug\SegregatePositiveNegative.pdb
