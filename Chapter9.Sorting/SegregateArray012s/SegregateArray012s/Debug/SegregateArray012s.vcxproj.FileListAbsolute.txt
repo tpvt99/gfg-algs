@@ -1,0 +1,2 @@
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\SegregateArray012s\SegregateArray012s\Debug\SegregateArray012s.exe
+D:\CProgrammingLanguage\gfg\Chapter9.Sorting\SegregateArray012s\SegregateArray012s\Debug\SegregateArray012s.pdb
