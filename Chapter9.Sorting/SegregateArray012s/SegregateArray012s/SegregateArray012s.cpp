@@ -4,11 +4,12 @@
 #include <iostream>
 void naiveSegregate(int* a, int n);
 void lomutoSegregate(int* a, int n);
+void hoardSegregate(int* a, int n);
 
 int main()
 {
-    int a[] = { 0,1,2,1,1,1,2,2,0,0,0,2,1,1,2,1,1,2 };
-    lomutoSegregate(a, sizeof(a)/sizeof(a[0]));
+    int a[] = { 0,1,2,1,1,1,2,2,0,0,0,2,1,1,2,1,1,2,1,2,2,2,0,1,2 };
+    hoardSegregate(a, sizeof(a)/sizeof(a[0]));
     printf("Array: ");
     for (int i = 0; i < sizeof(a) / sizeof(a[0]); i++) {
         printf("%d ", a[i]);
@@ -34,6 +35,26 @@ void lomutoSegregate(int* a, int n) {
             swap(&a[i], &a[k]);
             j++;
             swap(&a[j], &a[k]);
+        }
+    }
+}
+
+void hoardSegregate(int* a, int n) {
+    int low = -1, middle = -1, high = n;
+    int i = 0;
+    while ((middle + 1) <= (high - 1)) {
+        switch (a[i]) {
+        case 2: high--;
+            swap(&a[i], &a[high]);
+            break;
+        case 1: middle++;
+            i++;
+            break;
+        case 0: low++;
+            swap(&a[low], &a[i]);
+            i++;
+            middle++;
+            break;
         }
     }
 }
