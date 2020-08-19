@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/BucketSort.dir/main.cpp.o  -o BucketSort 
