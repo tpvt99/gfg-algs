@@ -1,0 +1,2 @@
+D:\CProgrammingLanguage\gfg\Chapter10.Matrix\TransposeMatrix\Debug\TransposeMatrix.exe
+D:\CProgrammingLanguage\gfg\Chapter10.Matrix\TransposeMatrix\Debug\TransposeMatrix.pdb
