@@ -1,0 +1,2 @@
+D:\CProgrammingLanguage\gfg\Chapter10.Matrix\RotateMatrix\Debug\RotateMatrix.exe
+D:\CProgrammingLanguage\gfg\Chapter10.Matrix\RotateMatrix\Debug\RotateMatrix.pdb
