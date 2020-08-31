@@ -1,0 +1,2 @@
+D:\CProgrammingLanguage\gfg\Chapter10.Matrix\SearchColumnAndRowWise\Debug\SearchColumnAndRowWise.exe
+D:\CProgrammingLanguage\gfg\Chapter10.Matrix\SearchColumnAndRowWise\Debug\SearchColumnAndRowWise.pdb
