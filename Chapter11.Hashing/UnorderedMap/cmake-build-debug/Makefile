@@ -68,10 +68,10 @@ RM = /home/tpvt96/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.6948.80/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter10.Matrix/DoublePointers
+CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/UnorderedMap
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter10.Matrix/DoublePointers/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/UnorderedMap/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter10.Matrix/DoublePointers/cmake-build-debug/CMakeFiles /home/tpvt96/cs_course/gfg-algs/Chapter10.Matrix/DoublePointers/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/UnorderedMap/cmake-build-debug/CMakeFiles /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/UnorderedMap/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter10.Matrix/DoublePointers/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/UnorderedMap/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DoublePointers
+# Target rules for targets named UnorderedMap
 
 # Build rule for target.
-DoublePointers: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DoublePointers
-.PHONY : DoublePointers
+UnorderedMap: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 UnorderedMap
+.PHONY : UnorderedMap
 
 # fast build rule for target.
-DoublePointers/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DoublePointers.dir/build.make CMakeFiles/DoublePointers.dir/build
-.PHONY : DoublePointers/fast
+UnorderedMap/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnorderedMap.dir/build.make CMakeFiles/UnorderedMap.dir/build
+.PHONY : UnorderedMap/fast
 
 main.o: main.cpp.o
 
@@ -149,7 +149,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DoublePointers.dir/build.make CMakeFiles/DoublePointers.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnorderedMap.dir/build.make CMakeFiles/UnorderedMap.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -158,7 +158,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DoublePointers.dir/build.make CMakeFiles/DoublePointers.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnorderedMap.dir/build.make CMakeFiles/UnorderedMap.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -167,7 +167,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DoublePointers.dir/build.make CMakeFiles/DoublePointers.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/UnorderedMap.dir/build.make CMakeFiles/UnorderedMap.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -178,7 +178,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... DoublePointers"
+	@echo "... UnorderedMap"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
