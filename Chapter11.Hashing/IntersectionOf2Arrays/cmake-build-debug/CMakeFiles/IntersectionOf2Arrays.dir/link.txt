@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/IntersectionOf2Arrays.dir/main.cpp.o  -o IntersectionOf2Arrays 
