@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/UnionOf2Arrays.dir/main.cpp.o  -o UnionOf2Arrays 
