@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/SubarrayWith0Sum.dir/main.cpp.o  -o SubarrayWith0Sum 
