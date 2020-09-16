@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/LongestSubarrayWith01.dir/main.cpp.o  -o LongestSubarrayWith01 
