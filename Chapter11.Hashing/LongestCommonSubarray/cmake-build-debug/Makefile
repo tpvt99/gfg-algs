@@ -68,10 +68,10 @@ RM = /home/tpvt96/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.62/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestSubarrayWith01
+CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestCommonSubarray
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestSubarrayWith01/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestCommonSubarray/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestSubarrayWith01/cmake-build-debug/CMakeFiles /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestSubarrayWith01/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestCommonSubarray/cmake-build-debug/CMakeFiles /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestCommonSubarray/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestSubarrayWith01/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestCommonSubarray/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named LongestSubarrayWith01
+# Target rules for targets named LongestCommonSubarray
 
 # Build rule for target.
-LongestSubarrayWith01: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LongestSubarrayWith01
-.PHONY : LongestSubarrayWith01
+LongestCommonSubarray: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LongestCommonSubarray
+.PHONY : LongestCommonSubarray
 
 # fast build rule for target.
-LongestSubarrayWith01/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestSubarrayWith01.dir/build.make CMakeFiles/LongestSubarrayWith01.dir/build
-.PHONY : LongestSubarrayWith01/fast
+LongestCommonSubarray/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestCommonSubarray.dir/build.make CMakeFiles/LongestCommonSubarray.dir/build
+.PHONY : LongestCommonSubarray/fast
 
 main.o: main.cpp.o
 
@@ -149,7 +149,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestSubarrayWith01.dir/build.make CMakeFiles/LongestSubarrayWith01.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestCommonSubarray.dir/build.make CMakeFiles/LongestCommonSubarray.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -158,7 +158,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestSubarrayWith01.dir/build.make CMakeFiles/LongestSubarrayWith01.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestCommonSubarray.dir/build.make CMakeFiles/LongestCommonSubarray.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -167,7 +167,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestSubarrayWith01.dir/build.make CMakeFiles/LongestSubarrayWith01.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestCommonSubarray.dir/build.make CMakeFiles/LongestCommonSubarray.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -178,7 +178,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... LongestSubarrayWith01"
+	@echo "... LongestCommonSubarray"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

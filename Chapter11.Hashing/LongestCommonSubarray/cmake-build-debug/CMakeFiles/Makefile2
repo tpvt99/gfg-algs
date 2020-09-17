@@ -64,16 +64,16 @@ RM = /home/tpvt96/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.7319.62/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestSubarrayWith01
+CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestCommonSubarray
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestSubarrayWith01/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestCommonSubarray/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/LongestSubarrayWith01.dir/all
+all: CMakeFiles/LongestCommonSubarray.dir/all
 
 .PHONY : all
 
@@ -83,36 +83,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/LongestSubarrayWith01.dir/clean
+clean: CMakeFiles/LongestCommonSubarray.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/LongestSubarrayWith01.dir
+# Target rules for target CMakeFiles/LongestCommonSubarray.dir
 
 # All Build rule for target.
-CMakeFiles/LongestSubarrayWith01.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestSubarrayWith01.dir/build.make CMakeFiles/LongestSubarrayWith01.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestSubarrayWith01.dir/build.make CMakeFiles/LongestSubarrayWith01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestSubarrayWith01/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target LongestSubarrayWith01"
-.PHONY : CMakeFiles/LongestSubarrayWith01.dir/all
+CMakeFiles/LongestCommonSubarray.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestCommonSubarray.dir/build.make CMakeFiles/LongestCommonSubarray.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestCommonSubarray.dir/build.make CMakeFiles/LongestCommonSubarray.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestCommonSubarray/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target LongestCommonSubarray"
+.PHONY : CMakeFiles/LongestCommonSubarray.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/LongestSubarrayWith01.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestSubarrayWith01/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LongestSubarrayWith01.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestSubarrayWith01/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/LongestSubarrayWith01.dir/rule
+CMakeFiles/LongestCommonSubarray.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestCommonSubarray/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LongestCommonSubarray.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter11.Hashing/LongestCommonSubarray/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/LongestCommonSubarray.dir/rule
 
 # Convenience name for target.
-LongestSubarrayWith01: CMakeFiles/LongestSubarrayWith01.dir/rule
+LongestCommonSubarray: CMakeFiles/LongestCommonSubarray.dir/rule
 
-.PHONY : LongestSubarrayWith01
+.PHONY : LongestCommonSubarray
 
 # clean rule for target.
-CMakeFiles/LongestSubarrayWith01.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestSubarrayWith01.dir/build.make CMakeFiles/LongestSubarrayWith01.dir/clean
-.PHONY : CMakeFiles/LongestSubarrayWith01.dir/clean
+CMakeFiles/LongestCommonSubarray.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/LongestCommonSubarray.dir/build.make CMakeFiles/LongestCommonSubarray.dir/clean
+.PHONY : CMakeFiles/LongestCommonSubarray.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
