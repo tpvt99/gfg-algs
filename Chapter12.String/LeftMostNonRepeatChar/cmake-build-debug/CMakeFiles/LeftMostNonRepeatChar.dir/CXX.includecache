@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tpvt96/cs_course/gfg-algs/Chapter12.String/LeftMostNonRepeatChar/main.cpp
+iostream
+-
+string
+-
+unordered_map
+-
+
