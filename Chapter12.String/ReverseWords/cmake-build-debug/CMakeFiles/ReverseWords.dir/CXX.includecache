@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tpvt96/cs_course/gfg-algs/Chapter12.String/ReverseWords/main.cpp
+iostream
+-
+string
+-
+stack
+-
+
