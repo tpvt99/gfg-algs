@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/NaivePatternwithDistinct.dir/main.cpp.o  -o NaivePatternwithDistinct 
