@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/LongestPrefixSuffix.dir/main.cpp.o  -o LongestPrefixSuffix 
