@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/LexicographicRank.dir/main.cpp.o  -o LexicographicRank 
