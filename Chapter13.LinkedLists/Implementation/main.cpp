@@ -11,8 +11,6 @@ void printNode(Node *head);
 int main() {
     Node *head = nullptr;
     addNode(&head, 10);
-    addNode(&head, 20);
-    addNode(&head, 30);
     printNode(head);
     return 0;
 }
@@ -41,8 +39,8 @@ void addNode(Node **head, int item) {
 }
 
 void printNode(Node *head) {
-    for (Node *top = head; top != nullptr; top = top->next) {
-        printf("%d -> ", top->item);
+    for (; head != nullptr; head = head->next) {
+        printf("%d -> ", head->item);
     }
     printf("NULL\n");
 }
