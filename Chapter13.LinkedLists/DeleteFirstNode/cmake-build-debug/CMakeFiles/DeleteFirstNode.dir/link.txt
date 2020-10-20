@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/DeleteFirstNode.dir/main.cpp.o  -o DeleteFirstNode 
