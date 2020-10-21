@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/SearchNodes.dir/main.cpp.o  -o SearchNodes 
