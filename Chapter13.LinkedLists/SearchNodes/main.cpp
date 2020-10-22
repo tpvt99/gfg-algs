@@ -22,7 +22,8 @@ int main() {
     std::cout << searchNode(head, -10) << std::endl;
     Node *head2 = nullptr;
     std::cout << searchNode(head2, 5) << std::endl;
-    std::cout << "Using recursive method: " << std::endl;
+    std::cout << "Using recursive met"
+                 "hod: " << std::endl;
     std::cout << searchNode(head, 5, 0) << std::endl;
     std::cout << searchNode(head, 10,0) << std::endl;
     std::cout << searchNode(head, -10,0) << std::endl;
