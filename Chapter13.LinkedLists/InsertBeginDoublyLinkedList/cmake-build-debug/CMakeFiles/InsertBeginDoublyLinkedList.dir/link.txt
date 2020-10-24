@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/InsertBeginDoublyLinkedList.dir/main.cpp.o  -o InsertBeginDoublyLinkedList 

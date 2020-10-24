@@ -1,0 +1,3 @@
+/home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/InsertBeginDoublyLinkedList/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/InsertBeginDoublyLinkedList/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/InsertBeginDoublyLinkedList/cmake-build-debug/CMakeFiles/InsertBeginDoublyLinkedList.dir
