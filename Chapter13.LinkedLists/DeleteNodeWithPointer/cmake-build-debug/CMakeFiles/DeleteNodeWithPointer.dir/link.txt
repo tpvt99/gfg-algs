@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/DeleteNodeWithPointer.dir/main.cpp.o  -o DeleteNodeWithPointer 
