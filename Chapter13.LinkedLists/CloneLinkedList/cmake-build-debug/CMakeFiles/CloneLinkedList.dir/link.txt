@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/CloneLinkedList.dir/main.cpp.o  -o CloneLinkedList 
