@@ -12,7 +12,9 @@ struct Node {
 };
 
 void printNode(Node *head);
+void printNodeData(Node *head);
 Node *clone(Node *head);
+Node *efficientClone(Node *head);
 
 int main() {
     Node *head = new Node(10);
@@ -32,9 +34,10 @@ int main() {
     temp2->random = temp;
     temp3->random = temp1;
 
-    Node *head2 = clone(head);
+    Node *head2 = efficientClone(head);
     printNode(head);
     printNode(head2);
+
 
     return 0;
 }
@@ -51,10 +54,41 @@ Node *clone(Node *head) {
         Node *newNode = m.find(head)->second;
         if (head->next != nullptr)
             newNode->next = m.find(head->next)->second;
-        newNode->random = m.find(head->random)->second;
+        if (head->random != nullptr)
+            newNode->random = m.find(head->random)->second;
         head = head->next;
     }
     return m.find(initHead)->second;
+}
+
+Node *efficientClone(Node *head) {
+    // Step 1, create consecutive nodes
+    Node *cur = head;
+    while (cur != nullptr) {
+        Node *next = cur->next;
+        cur->next = new Node(cur->data);
+        cur->next->next = next;
+        cur = next;
+    }
+    // Step 2, link random node
+    cur = head;
+    while (cur != nullptr) {
+        if (cur->random != nullptr) {
+            cur->next->random = cur->random->next;
+        } else {
+            cur->next->random = nullptr;
+        }
+        cur = cur->next->next;
+    }
+    // Step 3, unlink the nodes
+    cur = head;
+    Node *new_head = cur->next;
+    while (cur->next != nullptr) {
+        Node *next = cur->next;
+        cur->next = cur->next->next;
+        cur = next;
+    }
+    return new_head;
 }
 
 void printNode(Node *head) {
@@ -71,4 +105,13 @@ void printNode(Node *head) {
         std::cout << "Current: " << head << " point to random: " << head->random << std::endl;
         head = head->next;
     }
+}
+
+void printNodeData(Node *head) {
+    while (head != nullptr) {
+        std::cout << head->data << "->";
+        head = head->next;
+    }
+    printf("NULL\n");
+
 }
