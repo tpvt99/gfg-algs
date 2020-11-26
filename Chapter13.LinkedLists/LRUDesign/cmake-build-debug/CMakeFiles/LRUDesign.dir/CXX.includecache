@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/LRUDesign/main.cpp
+iostream
+-
+unordered_map
+-
+node.h
+/home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/LRUDesign/node.h
+
+/home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/LRUDesign/node.h
+

@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/LRUDesign.dir/main.cpp.o CMakeFiles/LRUDesign.dir/node.cpp.o  -o LRUDesign 
