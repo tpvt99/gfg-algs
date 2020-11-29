@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/PalindromeLinkedList.dir/main.cpp.o  -o PalindromeLinkedList 
