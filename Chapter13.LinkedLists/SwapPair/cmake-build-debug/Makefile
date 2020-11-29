@@ -68,24 +68,13 @@ RM = /home/tpvt96/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/DeleteLastNode
+CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/SwapPair
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/DeleteLastNode/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/SwapPair/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/tpvt96/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -98,11 +87,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/tpvt96/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin/cmake/linux/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/DeleteLastNode/cmake-build-debug/CMakeFiles /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/DeleteLastNode/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/SwapPair/cmake-build-debug/CMakeFiles /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/SwapPair/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/DeleteLastNode/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/SwapPair/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named DeleteLastNode
+# Target rules for targets named SwapPair
 
 # Build rule for target.
-DeleteLastNode: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 DeleteLastNode
-.PHONY : DeleteLastNode
+SwapPair: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 SwapPair
+.PHONY : SwapPair
 
 # fast build rule for target.
-DeleteLastNode/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeleteLastNode.dir/build.make CMakeFiles/DeleteLastNode.dir/build
-.PHONY : DeleteLastNode/fast
+SwapPair/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwapPair.dir/build.make CMakeFiles/SwapPair.dir/build
+.PHONY : SwapPair/fast
 
 main.o: main.cpp.o
 
@@ -149,7 +149,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeleteLastNode.dir/build.make CMakeFiles/DeleteLastNode.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwapPair.dir/build.make CMakeFiles/SwapPair.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -158,7 +158,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeleteLastNode.dir/build.make CMakeFiles/DeleteLastNode.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwapPair.dir/build.make CMakeFiles/SwapPair.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -167,7 +167,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DeleteLastNode.dir/build.make CMakeFiles/DeleteLastNode.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwapPair.dir/build.make CMakeFiles/SwapPair.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -178,7 +178,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... DeleteLastNode"
+	@echo "... SwapPair"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

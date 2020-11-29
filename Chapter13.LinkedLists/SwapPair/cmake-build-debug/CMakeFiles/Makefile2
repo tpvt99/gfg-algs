@@ -64,16 +64,16 @@ RM = /home/tpvt96/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/202.8194.17/bin
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/LRUDesign
+CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/SwapPair
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/LRUDesign/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/SwapPair/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/LRUDesign.dir/all
+all: CMakeFiles/SwapPair.dir/all
 
 .PHONY : all
 
@@ -83,36 +83,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/LRUDesign.dir/clean
+clean: CMakeFiles/SwapPair.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/LRUDesign.dir
+# Target rules for target CMakeFiles/SwapPair.dir
 
 # All Build rule for target.
-CMakeFiles/LRUDesign.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRUDesign.dir/build.make CMakeFiles/LRUDesign.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRUDesign.dir/build.make CMakeFiles/LRUDesign.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/LRUDesign/cmake-build-debug/CMakeFiles --progress-num=1,2,3 "Built target LRUDesign"
-.PHONY : CMakeFiles/LRUDesign.dir/all
+CMakeFiles/SwapPair.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwapPair.dir/build.make CMakeFiles/SwapPair.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwapPair.dir/build.make CMakeFiles/SwapPair.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/SwapPair/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target SwapPair"
+.PHONY : CMakeFiles/SwapPair.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/LRUDesign.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/LRUDesign/cmake-build-debug/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LRUDesign.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/LRUDesign/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/LRUDesign.dir/rule
+CMakeFiles/SwapPair.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/SwapPair/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SwapPair.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter13.LinkedLists/SwapPair/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/SwapPair.dir/rule
 
 # Convenience name for target.
-LRUDesign: CMakeFiles/LRUDesign.dir/rule
+SwapPair: CMakeFiles/SwapPair.dir/rule
 
-.PHONY : LRUDesign
+.PHONY : SwapPair
 
 # clean rule for target.
-CMakeFiles/LRUDesign.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/LRUDesign.dir/build.make CMakeFiles/LRUDesign.dir/clean
-.PHONY : CMakeFiles/LRUDesign.dir/clean
+CMakeFiles/SwapPair.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SwapPair.dir/build.make CMakeFiles/SwapPair.dir/clean
+.PHONY : CMakeFiles/SwapPair.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
