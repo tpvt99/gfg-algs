@@ -64,16 +64,16 @@ RM = /home/tpvt96/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/BalancedParanthesis
+CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/TwoStackInArray
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/BalancedParanthesis/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/TwoStackInArray/cmake-build-debug
 
 #=============================================================================
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/BalancedParanthesis.dir/all
+all: CMakeFiles/TwoStackInArray.dir/all
 
 .PHONY : all
 
@@ -83,36 +83,36 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/BalancedParanthesis.dir/clean
+clean: CMakeFiles/TwoStackInArray.dir/clean
 
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/BalancedParanthesis.dir
+# Target rules for target CMakeFiles/TwoStackInArray.dir
 
 # All Build rule for target.
-CMakeFiles/BalancedParanthesis.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BalancedParanthesis.dir/build.make CMakeFiles/BalancedParanthesis.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BalancedParanthesis.dir/build.make CMakeFiles/BalancedParanthesis.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/BalancedParanthesis/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target BalancedParanthesis"
-.PHONY : CMakeFiles/BalancedParanthesis.dir/all
+CMakeFiles/TwoStackInArray.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TwoStackInArray.dir/build.make CMakeFiles/TwoStackInArray.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TwoStackInArray.dir/build.make CMakeFiles/TwoStackInArray.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/TwoStackInArray/cmake-build-debug/CMakeFiles --progress-num=1,2 "Built target TwoStackInArray"
+.PHONY : CMakeFiles/TwoStackInArray.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/BalancedParanthesis.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/BalancedParanthesis/cmake-build-debug/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/BalancedParanthesis.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/BalancedParanthesis/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/BalancedParanthesis.dir/rule
+CMakeFiles/TwoStackInArray.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/TwoStackInArray/cmake-build-debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/TwoStackInArray.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/TwoStackInArray/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/TwoStackInArray.dir/rule
 
 # Convenience name for target.
-BalancedParanthesis: CMakeFiles/BalancedParanthesis.dir/rule
+TwoStackInArray: CMakeFiles/TwoStackInArray.dir/rule
 
-.PHONY : BalancedParanthesis
+.PHONY : TwoStackInArray
 
 # clean rule for target.
-CMakeFiles/BalancedParanthesis.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BalancedParanthesis.dir/build.make CMakeFiles/BalancedParanthesis.dir/clean
-.PHONY : CMakeFiles/BalancedParanthesis.dir/clean
+CMakeFiles/TwoStackInArray.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TwoStackInArray.dir/build.make CMakeFiles/TwoStackInArray.dir/clean
+.PHONY : CMakeFiles/TwoStackInArray.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

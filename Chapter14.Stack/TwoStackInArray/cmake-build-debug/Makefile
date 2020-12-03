@@ -68,24 +68,13 @@ RM = /home/tpvt96/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bi
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/BalancedParanthesis
+CMAKE_SOURCE_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/TwoStackInArray
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/BalancedParanthesis/cmake-build-debug
+CMAKE_BINARY_DIR = /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/TwoStackInArray/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/home/tpvt96/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -98,11 +87,22 @@ rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
 
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/home/tpvt96/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/203.5981.166/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/BalancedParanthesis/cmake-build-debug/CMakeFiles /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/BalancedParanthesis/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/TwoStackInArray/cmake-build-debug/CMakeFiles /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/TwoStackInArray/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/BalancedParanthesis/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tpvt96/cs_course/gfg-algs/Chapter14.Stack/TwoStackInArray/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -131,17 +131,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named BalancedParanthesis
+# Target rules for targets named TwoStackInArray
 
 # Build rule for target.
-BalancedParanthesis: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 BalancedParanthesis
-.PHONY : BalancedParanthesis
+TwoStackInArray: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 TwoStackInArray
+.PHONY : TwoStackInArray
 
 # fast build rule for target.
-BalancedParanthesis/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BalancedParanthesis.dir/build.make CMakeFiles/BalancedParanthesis.dir/build
-.PHONY : BalancedParanthesis/fast
+TwoStackInArray/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TwoStackInArray.dir/build.make CMakeFiles/TwoStackInArray.dir/build
+.PHONY : TwoStackInArray/fast
 
 main.o: main.cpp.o
 
@@ -149,7 +149,7 @@ main.o: main.cpp.o
 
 # target to build an object file
 main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BalancedParanthesis.dir/build.make CMakeFiles/BalancedParanthesis.dir/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TwoStackInArray.dir/build.make CMakeFiles/TwoStackInArray.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -158,7 +158,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BalancedParanthesis.dir/build.make CMakeFiles/BalancedParanthesis.dir/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TwoStackInArray.dir/build.make CMakeFiles/TwoStackInArray.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -167,7 +167,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/BalancedParanthesis.dir/build.make CMakeFiles/BalancedParanthesis.dir/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/TwoStackInArray.dir/build.make CMakeFiles/TwoStackInArray.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -178,7 +178,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... BalancedParanthesis"
+	@echo "... TwoStackInArray"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
