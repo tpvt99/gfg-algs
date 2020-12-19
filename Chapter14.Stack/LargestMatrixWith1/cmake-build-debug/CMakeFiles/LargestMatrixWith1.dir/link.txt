@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/LargestMatrixWith1.dir/main.cpp.o  -o LargestMatrixWith1 
