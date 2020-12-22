@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/GetMinO1Space.dir/main.cpp.o  -o GetMinO1Space 
