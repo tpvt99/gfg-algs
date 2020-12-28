@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/QueueImplementLinkList.dir/main.cpp.o  -o QueueImplementLinkList 
