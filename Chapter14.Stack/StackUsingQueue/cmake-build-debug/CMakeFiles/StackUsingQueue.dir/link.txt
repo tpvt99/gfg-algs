@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/StackUsingQueue.dir/main.cpp.o  -o StackUsingQueue 
