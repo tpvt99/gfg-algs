@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/ReverseQueue.dir/main.cpp.o  -o ReverseQueue 
