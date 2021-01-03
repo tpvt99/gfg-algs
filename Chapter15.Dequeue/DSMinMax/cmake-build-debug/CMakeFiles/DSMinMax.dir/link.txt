@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/DSMinMax.dir/main.cpp.o  -o DSMinMax 

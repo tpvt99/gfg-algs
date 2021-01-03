@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/ArrayImplemenOfDequeue.dir/main.cpp.o  -o ArrayImplemenOfDequeue 
