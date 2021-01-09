@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/MaxSubarray.dir/main.cpp.o  -o MaxSubarray 
