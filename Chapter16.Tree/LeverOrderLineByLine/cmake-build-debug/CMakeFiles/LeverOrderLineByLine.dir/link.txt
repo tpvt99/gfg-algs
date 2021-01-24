@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/LeverOrderLineByLine.dir/main.cpp.o  -o LeverOrderLineByLine 
