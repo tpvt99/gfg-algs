@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/SizeBinaryTree.dir/main.cpp.o  -o SizeBinaryTree 
