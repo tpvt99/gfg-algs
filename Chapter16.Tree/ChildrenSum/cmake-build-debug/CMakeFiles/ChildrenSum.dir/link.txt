@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/ChildrenSum.dir/main.cpp.o  -o ChildrenSum 
