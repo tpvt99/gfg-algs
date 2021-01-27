@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/PrintLeftView.dir/main.cpp.o  -o PrintLeftView 
