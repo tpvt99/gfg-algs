@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/DiameterOfTree.dir/main.cpp.o  -o DiameterOfTree 
