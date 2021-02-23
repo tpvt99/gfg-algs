@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/SerializeDeserialize.dir/main.cpp.o  -o SerializeDeserialize 
