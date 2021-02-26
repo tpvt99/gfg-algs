@@ -15,6 +15,7 @@ public:
 };
 
 void iterativeInorderTraversal(Node *root);
+void iterativeMethod2(Node *root);
 
 int main() {
     Node *node1 = new Node(2);
@@ -37,6 +38,8 @@ int main() {
     node4->right = node7;
 
     iterativeInorderTraversal(node1);
+    std::cout << "\n";
+    iterativeMethod2(node1);
     return 0;
 }
 
@@ -58,3 +61,22 @@ void iterativeInorderTraversal(Node *root) {
     }
 }
 
+void iterativeMethod2(Node *root) {
+    if (root == nullptr) {
+        return;
+    }
+    std::stack<Node *> s;
+    Node *curr = root;
+    s.push(root);
+    while (!s.empty()) {
+        s.pop();
+        while (curr != nullptr) {
+            if (curr->right != nullptr)
+                s.push(curr->right);
+            std::cout << curr->key << " ";
+            curr = curr->left;
+        }
+        if (!s.empty())
+            curr = s.top();
+    }
+}
