@@ -20,33 +20,32 @@ int balanceFactor(Node *node);
 void inOrderTraversal(Node *root);
 Node *leftRotate(Node *root);
 Node *rightRotate(Node *root);
+Node *deleteBST(Node *root, int x);
+Node * inorderSuccessor(Node *root);
 
 int main() {
 
     Node *root = nullptr;
+    root = insert(root, 9);
+    root = insert(root, 5);
     root = insert(root, 10);
-    inOrderTraversal(root);
-    std::cout << "\n";
+    root = insert(root, 0);
+    root = insert(root, 6);
+    root = insert(root, 11);
+    root = insert(root, -1);
+    root = insert(root, 1);
+    root = insert(root, 2);
 
-    root = insert(root, 20);
+    std::cout << "Preorder traversal of the "
+            "constructed AVL tree is \n";
     inOrderTraversal(root);
-    std::cout << "\n";
 
-    root = insert(root, 30);
-    inOrderTraversal(root);
-    std::cout << "\n";
+    root = deleteBST(root, 10);
 
-    root = insert(root, 40);
-    inOrderTraversal(root);
-    std::cout << "\n";
 
-    root = insert(root, 50);
+    std::cout << "\nPreorder traversal after"
+         << " deletion of 10 \n";
     inOrderTraversal(root);
-    std::cout << "\n";
-
-    root = insert(root, 25);
-    inOrderTraversal(root);
-    std::cout << "\n";
 
     return 0;
 }
@@ -61,8 +60,9 @@ Node *leftRotate(Node *root) {
     x->left = root;
 
     // Update height of x and root
+    root->height = 1 + std::max(findHeight(root->left), findHeight(root->right)); // Must update root->height first because y->height depends on root->height
     x->height = 1 + std::max(findHeight(x->left), findHeight(x->right));
-    root->height = 1 + std::max(findHeight(root->left), findHeight(root->right));
+
     return x;
 }
 
@@ -76,8 +76,9 @@ Node *rightRotate(Node *root) {
     root->left = T2;
 
     // Update height of x and root
+    root->height = 1 + std::max(findHeight(root->left), findHeight(root->right)); // Must update root->height first because y->height depends on root->height
     y->height = 1 + std::max(findHeight(y->left), findHeight(y->right));
-    root->height = 1 + std::max(findHeight(root->left), findHeight(root->right));
+
     return y;
 }
 
@@ -148,3 +149,71 @@ void inOrderTraversal(Node *root) {
     inOrderTraversal(root->right);
 }
 
+Node * inorderSuccessor(Node *root) {
+    if (root == nullptr)
+        return nullptr;
+
+    if (root->left == nullptr)
+        return root;
+    return inorderSuccessor(root->left);
+}
+
+Node *deleteBST(Node *root, int x) {
+    if (root == nullptr)
+        return nullptr;
+
+    if (root->key == x) {
+        // If x is a leaf node
+        if (root->left == nullptr && root->right == nullptr) {
+            delete root;
+            return nullptr;
+        }
+            // If x has 1 left child
+        else if (root->left != nullptr && root->right == nullptr) {
+            Node *temp = root->left;
+            delete root;
+            return temp;
+        } // If x has 1 right child
+        else if (root->right != nullptr && root->left == nullptr) {
+            Node *temp = root->right;
+            delete root;
+            return temp;
+        } // If x has 2 children
+        else {
+            Node *inorderSucc = inorderSuccessor(root->right);
+            if (inorderSucc == nullptr) {
+                delete root;
+                return nullptr;
+            }
+            root->key = inorderSucc->key;
+            root->right = deleteBST(root->right, inorderSucc->key);
+        }
+    }
+    else if (root->key > x) {
+        root->left = deleteBST(root->left, x);
+    } else
+        root->right = deleteBST(root->right, x);
+
+    // Step 2. Update root height
+    root->height = 1 + std::max(findHeight(root->left), findHeight(root->right));
+
+    // Step 3. Get balance factor
+    int bf = balanceFactor(root);
+
+    if (bf > 1 && balanceFactor(root->left) >= 0) {// Left-Left: Right Rotate
+        return rightRotate(root);
+    }
+    else if (bf > 1 && balanceFactor(root->left) < 0) { // Left-Right: Left Rotate, then Right Rotate
+        root->left = leftRotate(root->left);
+        return rightRotate(root);
+    }
+    else if (bf < -1 && balanceFactor(root->right) <= 0) { // Right-Right: Left Rotate
+        return leftRotate(root);
+    }
+    else if (bf < -1 && balanceFactor(root->right) > 0) { // Right-Left: Righte Rotate, then Left Rotate
+        root->right = rightRotate(root->right);
+        return leftRotate(root);
+    }
+
+    return root;
+}
