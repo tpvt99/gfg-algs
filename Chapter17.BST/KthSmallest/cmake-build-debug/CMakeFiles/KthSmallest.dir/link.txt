@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/KthSmallest.dir/main.cpp.o  -o KthSmallest 
