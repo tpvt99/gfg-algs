@@ -13,10 +13,12 @@ struct Node {
 };
 
 bool checkBSTHelper(Node *node, int max, int min);
+bool checkBSTMethod2(Node *node);
 
 int main() {
     Node *root = new Node(20);
     std::cout << checkBSTHelper(root, 10000, -10000) << std::endl;
+    std::cout << checkBSTMethod2(root) << std::endl;
 
     Node *node8 = new Node(8);
     root->left =node8;
@@ -29,6 +31,8 @@ int main() {
     node30->right = node35;
 
     std::cout << checkBSTHelper(root, 10000, -10000)<< std::endl;;
+    std::cout << checkBSTMethod2(root) << std::endl;
+
     return 0;
 }
 
@@ -41,4 +45,18 @@ bool checkBSTHelper(Node *node, int max, int min) {
         return isLeft & isRight;
     }
     return false;
+}
+
+int prev = INT32_MIN;
+
+bool checkBSTMethod2(Node *node) {
+    if (node == nullptr)
+        return true;
+    bool left = checkBSTMethod2(node->left);
+    if (node->key > prev) {
+        prev = node->key;
+    } else {
+        return false;
+    }
+    return left && checkBSTMethod2(node->right);
 }
