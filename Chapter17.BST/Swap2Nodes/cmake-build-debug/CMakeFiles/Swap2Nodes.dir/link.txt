@@ -1,0 +1,1 @@
+/usr/bin/g++  -g   CMakeFiles/Swap2Nodes.dir/main.cpp.o  -o Swap2Nodes 
