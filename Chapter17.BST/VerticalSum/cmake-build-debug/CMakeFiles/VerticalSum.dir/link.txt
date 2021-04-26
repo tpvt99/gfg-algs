@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/VerticalSum.dir/main.cpp.o -o VerticalSum 
