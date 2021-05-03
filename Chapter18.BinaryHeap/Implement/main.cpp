@@ -44,6 +44,39 @@ class MinHeap {
                 std::cout << arr[i] << " ";
             }
         }
+
+        // This function is to tamper array to test heapify
+        void setArray(int index, int value) {
+            arr[index] = value;
+        }
+
+        void heapify(int violateIndex) {
+            int currentIndex = violateIndex;
+            while (true) {
+                int leftIndex = left(currentIndex);
+                int rightIndex = right(currentIndex);
+                int minIndex = -1;
+                if (leftIndex < this->capacity) {
+                    if (arr[leftIndex] < arr[currentIndex]) {
+                        minIndex = leftIndex;
+                    }
+                }
+                if (rightIndex < this->capacity) {
+                    if (arr[rightIndex] < arr[currentIndex]) {
+                        if (minIndex == -1)
+                            minIndex = rightIndex;
+                        else
+                            if (arr[minIndex] > arr[rightIndex])
+                                minIndex = rightIndex;
+                    }
+                }
+                if (minIndex != -1) {
+                    std::swap(arr[currentIndex], arr[minIndex]);
+                } else
+                    break;
+                currentIndex = minIndex;
+            }
+        }
 };
 
 int main() {
@@ -56,7 +89,11 @@ int main() {
     heap.insert(100);
     heap.insert(25);
     heap.insert(40);
-    heap.insert(12);
     heap.printArray();
+    heap.setArray(0, 97);
+    heap.heapify(0);
+    std::cout << std::endl;
+    heap.printArray();
+
     return 0;
 }
