@@ -56,12 +56,12 @@ class MinHeap {
                 int leftIndex = left(currentIndex);
                 int rightIndex = right(currentIndex);
                 int minIndex = -1;
-                if (leftIndex < this->capacity) {
+                if (leftIndex < this->size) {
                     if (arr[leftIndex] < arr[currentIndex]) {
                         minIndex = leftIndex;
                     }
                 }
-                if (rightIndex < this->capacity) {
+                if (rightIndex < this->size) {
                     if (arr[rightIndex] < arr[currentIndex]) {
                         if (minIndex == -1)
                             minIndex = rightIndex;
@@ -76,6 +76,14 @@ class MinHeap {
                     break;
                 currentIndex = minIndex;
             }
+        }
+
+        int extractMin() {
+            int minimum = arr[0];
+            arr[0] = arr[size-1];
+            size -= 1;
+            heapify(0);
+            return minimum;
         }
 };
 
@@ -94,6 +102,8 @@ int main() {
     heap.heapify(0);
     std::cout << std::endl;
     heap.printArray();
-
+    std::cout << std::endl;
+    heap.extractMin();
+    heap.printArray();
     return 0;
 }
