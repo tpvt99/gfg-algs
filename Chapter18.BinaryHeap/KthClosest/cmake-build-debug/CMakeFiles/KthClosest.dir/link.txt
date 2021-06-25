@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/KthClosest.dir/main.cpp.o -o KthClosest 
