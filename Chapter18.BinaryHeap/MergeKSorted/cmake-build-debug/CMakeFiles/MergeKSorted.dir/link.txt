@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/MergeKSorted.dir/main.cpp.o -o MergeKSorted 
