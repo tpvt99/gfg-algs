@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/DetectCyclesDirectGraph.dir/main.cpp.o -o DetectCyclesDirectGraph 
