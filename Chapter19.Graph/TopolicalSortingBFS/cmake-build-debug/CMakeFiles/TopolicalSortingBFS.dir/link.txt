@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/TopolicalSortingBFS.dir/main.cpp.o -o TopolicalSortingBFS 
