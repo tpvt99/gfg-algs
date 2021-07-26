@@ -44,24 +44,14 @@ public:
 
 void addEdge(std::vector<AdjencyWeight> adj[], int u, int v, int weight);
 void initializeArray1(std::vector<AdjencyWeight> adj[]);
-std::vector<AdjencyWeight> * spanningTree(std::vector<AdjencyWeight> adj[], int V);
+int spanningTree(std::vector<AdjencyWeight> adj[], int V);
 
 int main() {
     int V = 4;
     std::vector<AdjencyWeight> adj[V];
     initializeArray1(adj);
-    std::vector<AdjencyWeight> *output = spanningTree(adj, V);
-    int *visited = new int[V];
-    visited[0] = 1;
-    for (int i = 0 ; i <V; i++) {
-        std::vector<AdjencyWeight> adjency = output[i];
-        for (auto adj: adjency) {
-            if (!visited[adj.getVertice()]) {
-                std::cout << "From " << i << " to " << adj.getVertice() << " weight: " << adj.getWeight() << std::endl;
-                visited[adj.getVertice()] = 1;
-            }
-        }
-    }
+    int output = spanningTree(adj, V);
+    std::cout << output;
     return 0;
 }
 
@@ -80,34 +70,32 @@ void initializeArray1(std::vector<AdjencyWeight> adj[]) {
     addEdge(adj, 2, 3, 20);
 }
 
-std::vector<AdjencyWeight> * spanningTree(std::vector<AdjencyWeight> adj[], int V) {
-    std::vector<int> inMST;
-    std::vector<int> notInMST;
-    std::vector<AdjencyWeight> *spanningTree = new std::vector<AdjencyWeight>[V];
-    inMST.push_back(0);
-    int count = 1;
-    int weight = 0;
-    while (count < V) {
-        Edge *edge = nullptr;
-        for (auto inVertice: inMST) {
-            // for each vertice, connect to its adjency that is not in the inMST. The min weights of vertice-adjency is the new one
-            for (auto adjency: adj[inVertice]) {
-                if (std::find(inMST.begin(), inMST.end(), adjency.getVertice()) == inMST.end()) {
-                    if (edge == nullptr) {
-                        edge = new Edge(inVertice, adjency.getVertice(), adjency.getWeight());
-                    } else {
-                        if (adjency.getWeight() < edge->getWeight())
-                            edge = new Edge(inVertice, adjency.getVertice(), adjency.getWeight());
-                    }
-                }
-            }
+int spanningTree(std::vector<AdjencyWeight> adj[], int V) {
+    int *key = new int[V];
+    for (int i = 0; i <V; i++)
+        key[i] = INT16_MAX;
+    key[0] = 0;
+
+    int *fin = new int [V];
+    for (int i =0; i<V; i++)
+        fin[i] = 0;
+    int res = 0;
+    for (int count = 0; count < V; count++) {
+        // Find the min that is not in finalized
+        int u = -1;
+        for (int i = 0; i < V; i++) {
+            if (!fin[i] && (u==-1 || key[i] < key[u]))
+                u = i;
         }
-        count++;
-        inMST.push_back(edge->getTo());
-        addEdge(spanningTree, edge->getFrom(), edge->getTo(), edge->getWeight());
-        weight += edge->getWeight();
+        fin[u] = 1;
+        res += key[u];
+        for (AdjencyWeight adjency: adj[u]) {
+            int v = adjency.getVertice();
+            int w = adjency.getWeight();
+            if ((!fin[v]) && (key[v] > w))
+                key[v] = w;
+        }
     }
-    std::cout << weight << std::endl;
-    return spanningTree;
+    return res;
 
 }
