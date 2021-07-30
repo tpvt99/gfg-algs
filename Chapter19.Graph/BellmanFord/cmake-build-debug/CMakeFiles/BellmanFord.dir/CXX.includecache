@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tpvt96/cs_course/gfg-algs/Chapter19.Graph/BellmanFord/main.cpp
+iostream
+-
+iostream
+-
+vector
+-
+queue
+-
+algorithm
+-
+stack
+-
+
