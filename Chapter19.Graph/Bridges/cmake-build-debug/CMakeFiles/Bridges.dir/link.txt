@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/Bridges.dir/main.cpp.o -o Bridges 
