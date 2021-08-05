@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/TarjanAlgorithm.dir/main.cpp.o -o TarjanAlgorithm 
