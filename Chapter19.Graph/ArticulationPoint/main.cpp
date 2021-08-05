@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -78,8 +79,4 @@ void findArticulationPoint(std::vector<int> adj[], int V) {
         parent[i] = -1;
     }
     dfs(adj, visited, depth, low, parent, 0, 1);
-    std::cout << std::endl;
-    for (int i = 0; i < V; i++) {
-        std::cout << "Vertice: " << i << " Depth: " << depth[i] << " Low: " << low[i] << " " << std::endl;
-    }
 }
