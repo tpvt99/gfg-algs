@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tpvt96/cs_course/gfg-algs/Chapter20.Greedy/ActivitySelection/main.cpp
+iostream
+-
+vector
+-
+algorithm
+-
+

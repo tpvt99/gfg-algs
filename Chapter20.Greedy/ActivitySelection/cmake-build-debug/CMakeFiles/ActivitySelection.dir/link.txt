@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/ActivitySelection.dir/main.cpp.o -o ActivitySelection 
