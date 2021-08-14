@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tpvt96/cs_course/gfg-algs/Chapter20.Greedy/HuffmanCoding/main.cpp
+iostream
+-
+string
+-
+unordered_map
+-
+vector
+-
+algorithm
+-
+queue
+-
+

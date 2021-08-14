@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/HuffmanCoding.dir/main.cpp.o -o HuffmanCoding 
