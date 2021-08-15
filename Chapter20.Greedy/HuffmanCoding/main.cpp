@@ -37,11 +37,15 @@ public:
     std::string getString() {
         return str;
     }
+    int getValue() {
+        return value;
+    }
 };
 
 void traversal(minHeapNode *root);
 bool sortFrequencyMap(std::pair<char, int> a, std::pair<char, int> b) ;
 std::string huffmanEncoding(minHeapNode **root, std::string string);
+std::string efficientHuffmanEncoding(minHeapNode **root, std::string string);
 std::string huffmanDecoding(minHeapNode *root, std::string binaryString);
 void encode(minHeapNode *root, std::string str, std::unordered_map<char, std::string> &encodeMap);
 
@@ -50,6 +54,13 @@ int main() {
     minHeapNode *root;
     std::string binaryString = huffmanEncoding(&root, c);
     std::string originalString = huffmanDecoding(root, binaryString);
+    std::cout << "Binary string: " << binaryString << std::endl;
+    std::cout << "Original string: " << originalString << std::endl;
+    std::cout << "---------------------" << std::endl;
+
+    minHeapNode *root2;
+    binaryString = efficientHuffmanEncoding(&root2, c);
+    originalString = huffmanDecoding(root2, binaryString);
     std::cout << "Binary string: " << binaryString << std::endl;
     std::cout << "Original string: " << originalString << std::endl;
     return 0;
@@ -117,6 +128,57 @@ std::string huffmanEncoding(minHeapNode **root, std::string string) {
         binaryString += encodeMap[c];
     }
     return binaryString;
+}
+
+std::string efficientHuffmanEncoding(minHeapNode **root, std::string string) {
+    // Find the frequency of characters
+    std::unordered_map<char, int> frequencyMap;
+    for (char c: string) {
+        frequencyMap[c] += 1;
+    }
+    std::vector<std::pair<char, int>> elems (frequencyMap.begin(), frequencyMap.end());
+    std::sort(elems.begin(), elems.end(), sortFrequencyMap);
+
+    // Push into min heap first k elements
+    auto compare {
+        [](minHeapNode *l, minHeapNode *r) {
+            return std::abs(l->getValue())>std::abs(r->getValue());
+        }};
+    std::priority_queue<minHeapNode *, std::vector<minHeapNode*>, decltype(compare)> q(compare);
+
+    for (auto &item: elems) {
+        std::string c;
+        c += item.first;
+        minHeapNode *node = new minHeapNode(c, item.second);
+        q.push(node);
+    }
+
+    while (q.size() > 1) {
+        minHeapNode *low1 = q.top();
+        q.pop();
+        minHeapNode *low2 = q.top();
+        q.pop();
+        minHeapNode *newNode = new minHeapNode("", low1->getValue() + low2->getValue());
+        newNode->setLeftNode(low1);
+        newNode->setRightNode(low2);
+        q.push(newNode);
+    }
+
+    *root = q.top();
+    q.pop();
+    // Encode
+    std::unordered_map<char, std::string> encodeMap;
+    encode(*root, "", encodeMap);
+    for (auto &item: encodeMap) {
+        std::cout << item.first << " : " << item.second << std::endl;
+    }
+
+    std::string binaryString = "";
+    for (char c: string) {
+        binaryString += encodeMap[c];
+    }
+    return binaryString;
+
 }
 
 std::string huffmanDecoding(minHeapNode *root, std::string binaryString) {
