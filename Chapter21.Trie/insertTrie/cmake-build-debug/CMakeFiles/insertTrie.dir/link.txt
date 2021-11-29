@@ -1,0 +1,1 @@
+/usr/bin/g++ -g CMakeFiles/insertTrie.dir/main.cpp.o -o insertTrie 
